@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu" />
 
-    <title>Twitter Clone</title>
+        <title>Twitter Clone</title>
     </head>
 
     <body>
@@ -88,7 +88,9 @@
                                     </button>
                                     <h6 class="mt-0 mb-1">WWF</h6>
                                     <div class="small-text">World Wildlife Fund: WWF - Endangered Species Conservation</div>
-                                    <button type="button" class="btn btn-dark btn-sm" style="float: right"> <i class="fab fa-twitter fa-1x"></i> Follow</button>
+                                    <button type="button" class="btn btn-dark btn-sm" style="float: right">
+                                        <i class="fab fa-twitter fa-1x"></i> Follow
+                                    </button>
                                 </div>
                             </li>
 
@@ -100,7 +102,9 @@
                                     </button>
                                     <h6 class="mt-0 mb-1">David Attenborough</h6>
                                     <div class="small-text">English broadcaster and naturalist</div>
-                                    <button type="button" class="btn btn-dark btn-sm" style="float: right"> <i class="fab fa-twitter fa-1x"></i> Follow</button>
+                                    <button type="button" class="btn btn-dark btn-sm" style="float: right">
+                                        <i class="fab fa-twitter fa-1x"></i> Follow
+                                    </button>
                                 </div>
                             </li>
 
@@ -112,7 +116,9 @@
                                     </button>
                                     <h6 class="mt-0 mb-1">Greenpeace</h6>
                                     <div class="small-text">Saving animals and wildlife since like forever.</div>
-                                    <button type="button" class="btn btn-dark btn-sm" style="float: right"> <i class="fab fa-twitter fa-1x"></i> Follow</button>
+                                    <button type="button" class="btn btn-dark btn-sm" style="float: right">
+                                        <i class="fab fa-twitter fa-1x"></i> Follow
+                                    </button>
                                 </div>
                             </li>
                         </div>

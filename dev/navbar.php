@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light">
     <nav class="navbar navbar-light">
-        <i class="fab fa-twitter fa-3x"></i>
+        <a href="index.php"><i class="fab fa-twitter fa-3x"></i></a>
     </nav>
 
     <a class="navbar-brand" href="#">Twitter</a>
@@ -21,7 +21,7 @@
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                # Discover
+                    # Discover
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Action</a>
@@ -32,7 +32,7 @@
             </li>
 
             <li class="nav-item">
-            <a class="nav-link disabled" href="#"><i class="far fa-user"> Me</i></a>
+                <a class="nav-link disabled" href="#"><i class="far fa-user"> Me</i></a>
             </li>
 
         </ul>
