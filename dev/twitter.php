@@ -18,8 +18,8 @@
         <!-- Main Navigation Bar -->
         <?php include "navbar.php"; ?>
 
-        <div class="container">
-            <div class="row">
+        <div class="container main-container">
+        <div class="row main-box">
 
                 <!-- PERSONAL INFO -->
                 <div class="col-md">
@@ -34,11 +34,18 @@
                                 </div>
                             </li>
 
-                            <div class="container about-me">
+                            <?php
+                                $tweetCount = 4;
+                                $followingCount = 4;
+                                $followersCount = 4;
+                            ?>
+
+                            <div class="container numbers-container">
                                 <div class="row">
-                                    <div class="col-sm">
+                                    <div class="col-sm numbers-column">
+
                                         <span class="badge badge-light">
-                                            4
+                                            <?= $tweetCount ?>
                                         </span>
                                         <br>
                                         <p>Tweets</p>
@@ -49,7 +56,7 @@
 
                                     <div class="col-sm">
                                         <span class="badge badge-light">
-                                            4
+                                            <?= $followingCount ?>    
                                         </span>
                                         <br>
                                         <p>Following</p>  
@@ -60,7 +67,7 @@
 
                                     <div class="col-sm">
                                         <span class="badge badge-light">
-                                            4
+                                            <?= $followersCount ?>
                                         </span>
                                         <br>
                                         <p>Followers</p>
@@ -80,6 +87,7 @@
                     <!-- WHAT TO FOLLOW? -->
                     <ul class="list-unstyled">
                         <div class="list-container">
+
                             <li class="media" id="firstSuggestion">
                                 <img class="mr-3" src="http://placebear.com/64/64" alt="Generic placeholder image">
                                 <div class="media-body">

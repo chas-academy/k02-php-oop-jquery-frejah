@@ -1,49 +1,109 @@
     body { 
-         /* The image used */
+         /* The background image used on the whole page */
         background-image: url('images/backgroundWall.jpg');
-
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
         background-position: center;
         height: 100%;
-
-    
-        /* Full height */
-        /* height: 100%; 
-
-        /* Center and scale the image nicely */
-        /* background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;  */
     }
 
+    /* Twitter main page */
+    .main-container {
+        padding-top: 100px;
+        position: relative;
+    }
+
+    /* Logo on navbar */
     .navbar-brand {
         font-family: "Ubuntu";
         font-size: 38px; 
         font-weight: bold;
     }
 
-    .container {
-        padding-top: 60px;
+    /* Twitter logo bird color */
+    .fa-twitter {
+        color: tomato;
+    }
+
+    /* User Profile bar position */
+    #cover-image-wrapper {
+        height: 400px;
+        overflow: hidden;
+    }
+
+    /* User Profile bar content design */
+    #profile-image-wrapper {
+        background-color: #ebd5b3;
+        border-bottom: 2px solid #ebd5b3;
+        height: 60px;
         position: relative;
     }
 
-    .about-me {
-        padding-top: 30px;
+    /* User Profile background image scale */
+    #cover-image-wrapper img {
+        width: 100%
     }
 
+    /* User Profile - Profile Image */
+    #profile-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        border: 5px solid black;
+        position: absolute;
+        bottom: -60px;
+    }
+
+    /* User Profile bar - Align of text elements */
+    .profile-stats {
+        float: left;
+        text-align: center;
+        width: 80px;
+        margin-top: 8px;
+        margin-bottom: 2px;
+        margin-left: 4px;
+        margin-right: 4px;
+        text-decoration: none;
+        color: #666;
+        font-size: 0.8em;
+    }
+
+    /* User Profile bar - Align of number elements */
+    .profile-stats span {
+        display: block;
+        margin: 0px auto;
+        font-size: 1.4em;
+        color: #444;
+        position: relative;
+        top: -4px;
+    }
+
+    /* User Profile bar - Hover over */
+    .profile-stats:hover {
+        text-decoration: none;
+        border-bottom: 0.8px solid tomato;
+        color: tomato;
+    } 
+
+    /* .numbers-container {
+        padding-top: 30px;
+    } */
+
+    /* Twitter main page - Following suggestions - description text size */
     .small-text {
         font-size: 12px;
     }
 
+    /* Twitter main page - Numbers of followers, following and tweets divider */
     .divider {
         width: 1px;
         margin: 6px 0;
         background: rgb(0, 0, 0);
       }
 
+    /* Twitter main page - All separate containers with information/tweets */
     .list-container {
         background-color: #ebd5b3;
         border-style: solid;
@@ -52,35 +112,33 @@
         border-top-left-radius: 10px;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
-
         padding-top: 20px;
         padding-bottom: 20px;
         padding-right: 10px;
         padding-left:   10px;
-
         margin-top:20px;
     }
 
+    /* Navbar design */
     .navbar {
         background-color: #ebd5b3;
     }
 
-    .row {
+    /* Twitter main page- Main container */
+    .main-box {
         background-color: rgba(235,213,179,0.8); 
-        /* border-style: solid; */
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
     }
     
-    
+    /* Index - Log In box */
     .loginbox {
         width: 500px;
         background-color: rgba(78, 51, 11, 0.6);
         padding: 50px;
-        margin-top:100px;
-
+        margin-top:200px;
         border-style: solid;
         border-top-right-radius: 50px;
         border-top-left-radius: 50px;
@@ -88,6 +146,7 @@
         border-bottom-left-radius: 50px;
     }
 
+    /* Header design - Register and Log in */
     h1 { 
         color: tomato;
         font-family: "Ubuntu";
@@ -98,17 +157,40 @@
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
 
-    .fa-twitter {
-        color: tomato;
-    }
-
+    /* Text design - Register and Log in */
    .form-group {
        color: white;
        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    /* Form design - Register and Log in */
+   .form-control {
+    border-color: darkgray;
+    border-width: 2px;
+    background-color: #ebd5b3;
    }
 
+    /* Form hover - Register and Log in */
+   .form-control:hover {
+    background-color: #ebd5b3;
+    border-color: tomato;
+   }
+
+   /* Button - Design for all big buttons */
     button {
        background-color: tomato;
        color: white;
-       text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    }  
+       /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+    }   
+
+    /* Button hover - reversed colors */
+    button:hover {
+        background-color: #ebd5b3;
+        border-color: tomato;
+        color: tomato;
+    }
+
+    #button-user{
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }

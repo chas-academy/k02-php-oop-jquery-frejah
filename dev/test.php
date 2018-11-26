@@ -542,8 +542,6 @@ echo "</div>";
 echo "</div>";
 echo "</ul>";
 
-
-
 // POTENTIAL FOLLOWING OPTIONS
 $followers = [
     [
@@ -577,24 +575,24 @@ echo "<div class=\"list-container\">";
 
 foreach($followers as $follower)
 {
-    echo "<li class=\"media\" id=\"firstSuggestion\">";
-    echo "<img class=\"mr-3\" src=\"http://placebear.com/64/64\" alt=\"Generic placeholder image\">";
-    echo "<div class=\"media-body\">";
-    echo "<button type=\"button\" class=\"close\" data-suggestion=\"#firstSuggestion\" aria-label=\"Close\">";
-    echo "<span aria-hidden=\"true\">&times;";
-    echo "</span>";
-    echo "</button>";
-    echo "<h6 class=\"mt-0 mb-1\">" . $follower['followerTitle'];
-    echo "</h6>";
-    echo "<div class=\"small-text\">" . $follower['followerSlogan'];
-    echo "</div>";
-    echo "<button type=\"button\" class=\"btn btn-dark btn-sm\" style=\"float: right\">";
-    echo "<i class=\"fab fa-twitter fa-1x\">";
-    echo "</i>"; 
-    echo " Follow";
-    echo "</button>";
-    echo "</div>";
-    echo "</li>";
+    echo "<li class='media' id=\"firstSuggestion\">
+    <img class=\"mr-3\" src=\"http://placebear.com/64/64\" alt=\"Generic placeholder image\">
+    <div class=\"media-body\">
+    <button type=\"button\" class=\"close\" data-suggestion=\"#firstSuggestion\" aria-label=\"Close\">
+    <span aria-hidden=\"true\">&times;
+    </span>
+    </button>
+    <h6 class=\"mt-0 mb-1\">{$follower['followerTitle']}
+    </h6>
+    <div class=\"small-text\">{$follower['followerSlogan']}
+    </div>
+    <button type=\"button\" class=\"btn btn-dark btn-sm\" style=\"float: right\">
+    <i class=\"fab fa-twitter fa-1x\">
+    </i>
+    Follow
+    </button>
+    </div>
+    </li>";
 }
 
     echo "</div>";
@@ -609,6 +607,14 @@ Tweets
     
 <?php
 $tweets = [
+    [
+        'tweetSubject' => 'List-based media object',
+        'tweetText' => 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'
+    ],
+    [
+        'tweetSubject' => 'List-based media object',
+        'tweetText' => 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'
+    ],
     [
         'tweetSubject' => 'List-based media object',
         'tweetText' => 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'
