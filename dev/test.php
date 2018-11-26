@@ -609,23 +609,28 @@ Tweets
 $tweets = [
     [
         'tweetSubject' => 'List-based media object',
-        'tweetText' => 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'
+        'tweetText' => 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.',
+        'tweetImg' => "<img class=\"mr-3\" src=\"https://placekitten.com/96/139\" alt=\"Generic placeholder image\">"
     ],
     [
         'tweetSubject' => 'List-based media object',
-        'tweetText' => 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'
+        'tweetText' => 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.',
+        'tweetImg' => "<img class=\"mr-3\" src=\"https://placekitten.com/96/139\" alt=\"Generic placeholder image\">"
     ],
     [
         'tweetSubject' => 'List-based media object',
-        'tweetText' => 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'
+        'tweetText' => 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.',
+        'tweetImg' => "<img class=\"mr-3\" src=\"https://placekitten.com/96/139\" alt=\"Generic placeholder image\">"
     ],
     [
         'tweetSubject' => 'List-based media object',
-        'tweetText' => 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'
+        'tweetText' => 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.',
+        'tweetImg' => "<img class=\"mr-3\" src=\"https://placekitten.com/96/139\" alt=\"Generic placeholder image\">"
     ],
     [
         'tweetSubject' => 'List-based media object',
-        'tweetText' => 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'
+        'tweetText' => 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.',
+        'tweetImg' => "<img class=\"mr-3\" src=\"https://placekitten.com/96/139\" alt=\"Generic placeholder image\">"
     ]
 ];
 
@@ -633,7 +638,8 @@ foreach($tweets as $tweet)
 {
     echo "<div class=\"list-container\">";
     echo "<li class=\"media\">";
-    echo "<img class=\"mr-3\" src=\"https://placekitten.com/96/139\" alt=\"Generic placeholder image\">";
+    echo "<div class\"img\">" . $tweet['tweetImg'];
+    echo "</div>";
     echo "<div class=\"media-body\">";
     echo "<h5 class=\"mt-0 mb-1\">" . $tweet['tweetSubject'];
     echo "</h5>";
