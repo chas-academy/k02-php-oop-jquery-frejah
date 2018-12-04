@@ -27,7 +27,7 @@
                     <ul class="list-unstyled">
                         <div class="list-container">
                             <li class="media">
-                                <img class="mr-3" id='profile-img' src="https://placekitten.com/96/139" alt="Generic placeholder image">
+                                <img class="mr-3" id='profile-img'src="https://placekitten.com/96/139" alt="Generic placeholder image">
                                 <div class="media-body">
                                     <h5 class="mt-0 mb-1">List-based media object</h5>
                                     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
@@ -76,7 +76,7 @@
                                     <div class="input-group mb-3">
                                         <input type="text" class="form-control" placeholder="Compose new tweet" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                         <div class="input-group-append">
-                                            <button class="btn my-2 my-sm-0" type="button">Tweet</button>
+                                            <button class="btn my-sm-0" type="button">Tweet</button>
                                         </div>
                                     </div>
                                 </div>
@@ -169,6 +169,9 @@
     {
         echo "<div class=\"list-container\">
         <li class=\"media\">
+        <button type=\"button\" class=\"close\" data-suggestion=\"#list-container\" aria-label=\"Close\">
+        <span aria-hidden=\"true\">&times;</span>
+        </button>
         <div class\"img\">{$tweet['tweetImg']}</div>
         <div class=\"media-body\">
         <h5 class=\"mt-0 mb-1\">{$tweet['tweetSubject']}</h5>
