@@ -13,7 +13,7 @@
             foreach ($followingOptions as $toFollow)
             {
                 echo "<li class=\"media\" id=\"followSuggestion\">
-                    <div class\"img\">{$toFollow['followerImg']}</div>
+                    <div class\"img\"><img class=\"mr-3\" id=\"profile-img\" src=\"{$toFollow['followerImg']}\" alt=\"Generic placeholder image\"></div>
                     <div class=\"media-body\">
                     <button type=\"button\" class=\"close\" data-suggestion=\"#followSuggestion\" aria-label=\"Close\">
                     <span aria-hidden=\"true\">&times;</span>

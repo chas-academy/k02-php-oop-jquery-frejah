@@ -8,6 +8,9 @@
     include "src/TweetsController.php";
     include "src/views/TweetsView.php";
 
+    include "src/models/userModel.php";
+
+
     $statsController = new TwitterStatsController();
     $statsView = new TwitterStatsView($statsController);
 
@@ -16,6 +19,8 @@
 
     $tweetsController = new TweetsController();
     $tweetsView = new TweetsView($tweetsController);
+
+    $userModel = new userModel();
 ?>
 
 <!doctype html>
@@ -39,24 +44,15 @@
         <?php include "navbar.php"; ?>
  
         <div id="cover-image-wrapper">
-            <img src="/// BACKGROUND IMAGE ///" alt="Cover Image"/>
+           <img src="<?=$userModel->getUserBackground()?>" alt="Cover Image\">
         </div>
-    <?php
-        $profileInfo = [
-            [
-            'userImg' => "images/lama_face.jpg",
-            'userBackground' => "images/house_header.jpg",
-            'userName' => "Chewpaca de Paca",
-            'userText' => "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
-            ]
-        ];
-    ?>
 
         <div id="profile-image-wrapper">
             <div class="container">
                 <div class="row">
-                   <div class="col-4">
-                        <img src="/// PROFILE IMAGE ///" id="profile-image" alt="Profile image">
+                    
+                   <div class="col-2">
+                        <img src="<?=$userModel->getUserImg()?>" id="profile-image" alt="Profile image">
                     </div>
 
                     <?php $statsView->render(); ?>
@@ -76,27 +72,14 @@
                     <ul class="list-unstyled">
                         <div class="list-container">
                             <li class="media">
-                                <!-- <img class="mr-3" src="https://placekitten.com/96/139" alt="Generic placeholder image"> -->
                                 <div class="media-body">
-                                    <h5 class="mt-0 mb-1" id="user-name"> // USERNAME /// <i class="fas fa-check-circle"></i></h5><br><br>
-                                    <div class="user-text"> /// USER TEXT ///</div>
+                                    <h5 class="mt-0 mb-1" id="user-name"><?=$userModel->getUserName()?><i class="fas fa-check-circle"></i></h5><br><br>
+                                    <div class="user-text"><?=$userModel->getUserText()?></div>
                                 </div>
                             </li>
 
                             <div class="container numbers-container">
                                 <div class="row">
-                                    <!-- <div class="col-sm numbers-column">
-                                        <p>Tweets</p>
-                                    </div>
-
-                                    <div class="col-sm">
-                                        <p>Following</p>  
-                                    </div>
-
-                                    <div class="col-sm">
-                                        <p>Followers</p>
-                                    </div> -->
-
                                     <div class="input-group mb-3">
                                         <input type="text" class="form-control" placeholder="Compose new tweet" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                         <div class="input-group-append">
@@ -108,7 +91,7 @@
                         </div>
                     </ul>
 
-            <!-- WHAT TO FOLLOW? -->
+        <!-- WHAT TO FOLLOW? -->
             <ul class="list-unstyled">
                 <div class="list-container">
                     <?php $followingView->render(); ?>
@@ -116,8 +99,7 @@
             </ul>
         </div>
 
-
-            <!-- ALL TWEETS -->
+         <!-- ALL TWEETS -->
                 <div class="col-lg">
                     <ul class="list-unstyled">
                         <?php $tweetsView->render(); ?>

@@ -31,10 +31,16 @@
     /* USER PROFILE */
 
     /* User Profile bar position */
-    #cover-image-wrapper {
+    /* #cover-image-wrapper {
         height: 400px;
         overflow: hidden;
-    }
+    } */
+
+    #cover-image-wrapper img {
+        width: 200px;
+        height: 400px;
+        object-fit: cover;
+     }
 
     /* User Profile bar content design */
     #profile-image-wrapper {
@@ -50,7 +56,7 @@
     }
 
     /* User Profile - Profile Image */
-    #profile-image {
+    /* #profile-image {
         width: 200px;
         height: 200px;
         border-radius: 100px;
@@ -60,7 +66,16 @@
 
         position: absolute;
         z-index: 2;
-    }
+    } */
+
+    #profile-image {
+        width:80px;
+        height:80px;
+        object-fit:cover;
+        border-radius: 100px;
+        border: 2px solid black;
+        margin-top: -10%;
+     }
 
     /* User Profile bar - Align of text elements */
     #user-name {
@@ -72,6 +87,19 @@
         float: left;
         text-align: center;
         width: 80px;
+        margin-top: 12px;
+        margin-bottom: 2px;
+        margin-left: 4px;
+        margin-right: 4px;
+        text-decoration: none;
+        color: #666;
+        font-size: 0.8em;
+     }
+
+    /* .profile-stats {
+        float: left;
+        text-align: center;
+        width: 80px;
         margin-top: 8px;
         margin-bottom: 2px;
         margin-left: 4px;
@@ -79,7 +107,7 @@
         text-decoration: none;
         color: #666;
         font-size: 0.8em;
-    }
+    } */
 
     /* User Profile bar - Align of number elements */
     .profile-stats span {
@@ -100,15 +128,12 @@
 
     /* TWITTER MAIN PAGE */
 
-    /* .numbers-container {
-        padding-top: 30px;
-    } */
-
     /* Twitter main page */
+
     .main-container {
+        padding-top: 100px;
         position: relative;
-        padding-top: 80px;
-    }
+     }
 
     .main-container-user {
         position: relative;
@@ -133,10 +158,6 @@
         border-style: solid;
         border-width: 1px;
         border-radius: 10px;
-        /* border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px; */
         padding-top: 20px;
         padding-bottom: 20px;
         padding-right: 10px;
@@ -147,10 +168,7 @@
     /* Twitter main page- Main container */
     .main-box {
         background-color: rgba(235,213,179,0.8); 
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
+        border-radius: 10px;
         padding-top: 10px;
         margin-top: 60px;
     }
@@ -175,10 +193,7 @@
         padding: 50px;
         margin-top:200px;
         border-style: solid;
-        border-top-right-radius: 50px;
-        border-top-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-        border-bottom-left-radius: 50px;
+        border-radius: 50px;
     }
 
     /* Text design - Register and Log in */
@@ -217,11 +232,88 @@
     }
 
     /* Follow button on user profile page */
-        #button-user{
+        /* #button-user{
         margin-top: 10px;
         margin-bottom: 2px;
-    } 
+    }  */
 
+    #button-user{
+        transform: scale(0.6);
+        margin-top: 10px;
+        margin-bottom: 2px;
+        background-color: tomato;
+        color: white;
+        float:right;
+        margin-top:-40px;
+     }
+
+     .custom-col-style {
+        font-size: 14px;
+     }
+     
+     @media (min-width: 576px) {  
+        .custom-col-style {
+           font-size: 12px;
+        }
+
+        #button-user {
+            transform: scale(1);
+            background-color: tomato;
+            color: white;
+            margin-top:10px;
+            /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+          }   
+      
+          .profile-stats {
+          margin-top: 15px;
+         }
+      
+      }
+      
+      @media (min-width: 768px) {  
+         .custom-col-style {
+            font-size: 14px;
+         }
+      
+         #profile-image {
+            width:100px;
+            height:100px;
+            margin-top: -20%;
+          }
+      
+          .profile-stats {
+            margin-top: 15px;
+           }
+      }
+      
+      /* Large devices (desktops, 992px and up) */
+      @media (min-width: 992px) { 
+         .custom-col-style {
+            font-size: 16px;
+         }
+      
+         #profile-image {
+            width:130px;
+            height:130px;
+            margin-top: -25%;
+          }
+      
+          .profile-stats {
+            margin-top: 10px;
+           }
+      }
+       
+      /* Extra large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) {  
+         .custom-col-style {
+            font-size: 20px;
+         }
+      
+         .profile-stats {
+            margin-top: 3px;
+           }
+      }
+      
     /* Twitter profile pictures */
     #profile-img {
         border-radius: 100px;
